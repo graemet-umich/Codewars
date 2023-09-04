@@ -27,9 +27,16 @@ const binaryArrayToNumber = arr => {
 };
 */
 
+/*
 // use parseInt()
 const binaryArrayToNumber = arr => {
   return parseInt(arr.join(''), 2)
+};
+*/
+
+// use left shift
+const binaryArrayToNumber = arr => {
+  return arr.reduce( (acc, e) => acc << 1 | e );
 };
 
 module.exports = { binaryArrayToNumber };
