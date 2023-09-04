@@ -8,5 +8,6 @@ describe("Tests", () => {
   it("test", () => {
     assert.equal(pigIt('Pig latin is cool'),'igPay atinlay siay oolcay')
     assert.equal(pigIt('This is my string'),'hisTay siay ymay tringsay')
+    assert.equal(pigIt('Hello world !'), 'elloHay orldway !')
   });
 });

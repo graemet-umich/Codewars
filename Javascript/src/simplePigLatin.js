@@ -9,19 +9,19 @@ pigIt('Hello world !');     // elloHay orldway !
 */
 
 function pigIt(str){
-  let ws = str.split(/\s+/);
-
-  ws.map( w => w.slice(1) + w[0] + 'ay' )
-
-  return ws
+  return str.split(/\s+/)
+            .map( w => isWord(w) ? w.slice(1) + w[0] + 'ay' : w )
+            .join(' ');
 }
 
-
 // test for case-insensitive character
-const isAlpha = (c) => (/a-z/i).test(c);
+const isAlpha = (c) => (/[a-z]/i).test(c);
+
+// will fail for 'world!' ==> 'orld!way'
+const isWord = (w) => w.split('').filter(isAlpha).length;
 
 module.exports = { pigIt };
 
-console.log(pigIt('Pig Latin is cool'));
+// console.log(pigIt('Hello world !'));
 
 
