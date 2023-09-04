@@ -1,0 +1,25 @@
+{
+  "name": "codewars-javascript",
+  "version": "1.0.0",
+  "description": "a selection of Codewars katas using Javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "codewars", "Javascript"
+  ],
+  "author": "graemet",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
+  }
+}
