@@ -18,6 +18,7 @@ However, the arrays can have varying lengths, not just limited to 4.
 
 */
 
+// reverse the array to align powers of 2 to index
 const binaryArrayToNumber = arr => {
   return arr.reverse()
             .map( (e, i) => e * Math.pow(2, i) )
