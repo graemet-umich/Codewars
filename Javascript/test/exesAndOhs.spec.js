@@ -4,7 +4,7 @@ const assert = chai.assert;
 chai.config.truncateThreshold=0;
 const XO = require('../src/exesAndOhs').XO;
 
-describe("Tests", () => {
+describe("Exes and Ohs", () => {
   it("test", () => {
 assert.equal(XO('xo'),true);
 assert.equal(XO("xxOo"),true);

@@ -18,8 +18,6 @@ However, the arrays can have varying lengths, not just limited to 4.
 
 */
 
-
-
 const binaryArrayToNumber = arr => {
   return 0;
 };
