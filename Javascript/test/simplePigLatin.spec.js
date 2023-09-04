@@ -2,7 +2,7 @@
 const chai = require("chai");
 const assert = chai.assert;
 chai.config.truncateThreshold=0;
-const pigIt = require('../src/twoToOne').pigIt;
+const pigIt = require('../src/simplePigLatin').pigIt;
 
 describe("Tests", () => {
   it("test", () => {
