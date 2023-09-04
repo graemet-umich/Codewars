@@ -19,7 +19,9 @@ However, the arrays can have varying lengths, not just limited to 4.
 */
 
 const binaryArrayToNumber = arr => {
-  return 0;
+  return arr.reverse()
+            .map( (e, i) => e * Math.pow(2, i) )
+            .reduce( (acc, e) => acc + e, 0);
 };
 
 module.exports = { binaryArrayToNumber };
