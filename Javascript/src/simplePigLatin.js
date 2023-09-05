@@ -20,6 +20,11 @@ const isAlpha = (c) => (/[a-z]/i).test(c);
 // will fail for 'world!' ==> 'orld!way'
 const isWord = (w) => w.split('').filter(isAlpha).length;
 
+// use pattern matching to find word (\w) characters, then replace
+function pigIt(str){
+  return str.replace(/(\w)(\w*)(\s|$)/g, "\$2\$1ay\$3")
+}
+
 module.exports = { pigIt };
 
 // console.log(pigIt('Hello world !'));
